@@ -26,8 +26,6 @@ Copy code
 cp .env.example .env
 Then, open the .env file and add your credentials and database path:
 
-env
-Copy code
 OPENAI_API_KEY=your_openai_api_key_here
 DATABASE_PATH=path_to_your_database_here
 OPENAI_API_KEY: Get this key by creating an account on OpenAI and navigating to your API key section.
@@ -36,16 +34,12 @@ DATABASE_PATH: The path to your SQLite database (e.g., tender_documents.db).
 To Process a Single Document:
 You can process a single document by running the run_pipeline.py file:
 
-bash
-Copy code
 python run_pipeline.py
 In this script, the document ID is hardcoded as 01_tender_doc. You can change the document ID to any valid one if necessary. This script will fetch the document content, clean the text, run the NLP model to extract key information, and save the result to a JSON file.
 
 To Process All Documents in the Database:
 If you want to process all the documents in the database, use the run_pipeline_to_all.py script:
 
-bash
-Copy code
 python run_pipeline_to_all.py
 This script will:
 
