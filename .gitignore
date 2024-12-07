@@ -1,0 +1,5 @@
+# Ignore .env file to prevent sensitive information from being tracked
+.env
+
+# Ignore virtual environments (if you're using one)
+venv/
